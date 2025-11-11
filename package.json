@@ -1,0 +1,17 @@
+{
+  "name": "productcard",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.1.17"
+  },
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "serve": "live-server --browser=chrome --port=5500",
+    "dev": "concurrently \"npm run watch:css\" \"npm run serve\""
+  }
+}

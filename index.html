@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Card — Tailwind (productcard)</title>
+    <link rel="stylesheet" href="./src/output.css">
+  </head>
+  <body class="bg-white min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-sm w-full">
+      <div
+        class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-[1.03] hover:shadow-2xl"
+      >
+        <!-- Product Image -->
+        <div class="overflow-hidden">
+          <img
+            src="https://iplanet.one/cdn/shop/files/iPhone_15_Pink_PDP_Image_Position-1__en-IN_e784559e-7a8a-451a-8949-354ca2b18e62.jpg?v=1695428218"
+            alt="Product"
+            class="w-full h-56 object-cover transform transition duration-500 hover:scale-110"
+          />
+          <div class="absolute top-3 left-3 bg-black/70  text-indigo-600 text-xs font-semibold px-3 py-1 rounded-lg flex items-center gap-1 backdrop-blur-sm">★ 4.5</div>
+
+        </div>
+        
+
+        <!-- Content -->
+        <div class="p-5">
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">
+                Stylish Headphones
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">
+                Wireless, noise-cancelling, long battery life.
+              </p>
+            </div>
+            <div class="text-right">
+              <span class="text-xl font-bold text-indigo-600">$129</span>
+              <div class="text-sm text-gray-400">incl. taxes</div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-5 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <button
+                class="inline-flex items-center px-3 py-1.5 bg-indigo-600 text-white text-sm rounded-md transform transition-all duration-300 hover:scale-105 hover:bg-indigo-700 hover:shadow-md active:scale-95"
+              >
+                Add to cart
+              </button>
+              <button
+                class="inline-flex items-center px-3 py-1.5 border border-gray-200 text-sm rounded-md transform transition-all duration-300 hover:scale-105 hover:bg-gray-50 hover:shadow-sm active:scale-95"
+              >
+                Wishlist
+              </button>
+            </div>
+            <div class="text-sm text-green-600 font-medium">In stock</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
